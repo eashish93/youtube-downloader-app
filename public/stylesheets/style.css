@@ -1,0 +1,43 @@
+
+body {
+    font-family: 'Open Sans', 'Lucida Grande', sans-serif;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(0,0,0,.4)!important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+   color: rgba(0,0,0,.4)!important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+   color: rgba(0,0,0,.4)!important;
+}
+
+.site-head {
+    padding: 1.4rem 2rem;
+    text-align: center;
+    margin-top: 6rem;
+}
+.site-head .title {
+    position: relative;
+    display: inline-block;
+    font-family: 'Bungee Shade', cursive;
+}
+.site-head .title:before {
+    content: "";
+    position: absolute;
+    width: 70px; height: 6px;
+    background: rgba(144, 232, 24, 1);
+    bottom: -10px;
+    left: 6px;
+}
+
+.content-wrap {
+    padding: 1rem;
+}
+.down-form input{
+    border: 2px solid #efefef;
+}
+.down-form input:focus {
+    border-color: rgba(104, 202, 24, .4);
+}

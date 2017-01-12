@@ -1,0 +1,18 @@
+{
+  "name": "youtube-downloader-app",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "hbs": "~4.0.0",
+    "morgan": "~1.7.0",
+    "request": "^2.79.0",
+    "serve-favicon": "~2.3.0",
+    "youtube-dl": "^1.11.1"
+  }
+}

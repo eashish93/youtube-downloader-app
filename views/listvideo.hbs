@@ -1,0 +1,27 @@
+
+<div class="container content-wrap">
+    <div class="mb-4">
+        <a href="/" class="btn btn-secondary">← Back To Homepage</a>
+    </div>
+
+        {{#if error}}
+        <p>{{error}}</p>
+        {{else}}
+            <div class="col">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/{{meta.id}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-6">
+                <h4 class="h5 mb-4 font-weight-bold">Download Links <small>(multiple sizes and formats)</small></h4>
+                <ul class="list-group">
+                    {{#each meta.formats}}
+                    <li class="list-group-item">
+                        <a href="{{url}}" style="font-size: 12px">{{format_note}}
+                            <div class="small">Ext: {{ext}} | Size: {{filesize}}</div>
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{/if}}
+</div>
